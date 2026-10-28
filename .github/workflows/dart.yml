@@ -1,0 +1,37 @@
+name: Dart CI
+on:
+  push:
+  pull_request:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+      - name: Dependencies
+        run: dart pub get
+      - name: Formatter (format sources in CI working copy)
+        run: dart format .
+      - name: Static analysis
+        run: dart analyze
+      - name: Unit tests
+        run: dart test --reporter expanded
+      - name: Demo runs + console evidence
+        run: bash scripts/run_all.sh
+      - name: Coverage
+        run: |
+          dart pub global activate coverage
+          dart pub global run coverage:test_with_coverage
+      - name: Save logs and coverage
+        uses: actions/upload-artifact@v4
+        with:
+          name: dart-evidence
+          path: |
+            reports/console/
+            reports/statistics.json
+            reports/student_report.csv
+            reports/async_students.json
+            reports/async_summary.json
+            coverage/lcov.info
