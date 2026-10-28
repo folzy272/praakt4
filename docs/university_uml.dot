@@ -1,0 +1,18 @@
+digraph UniversityModel {
+  graph [rankdir=TB, bgcolor="white", splines=ortho, pad="0.30", nodesep="0.65", ranksep="0.85"];
+  node [shape=record, style="rounded,filled", fillcolor="#f4f7ff", color="#415d89", fontname="DejaVu Sans", fontsize=11];
+  edge [color="#415d89", arrowsize=0.8, fontname="DejaVu Sans", fontsize=10];
+  Person [label="{«abstract» Person|+ id: String\l+ firstName: String\l+ lastName: String\l+ birthDate: DateTime\l|+ fullName: String\l+ age: int\l+ role: String\l}"];
+  Student [label="{Student|+ enrolledCourses: List\l+ grades: Map\l+ skills: Set\l+ enrollmentYear: int\l|+ gpa: double\l+ enrollInCourse()\l+ addGrade()\l+ getPassedCourses()\l+ toJson() / fromJson()\l}"];
+  Professor [label="{Professor|+ department: String\l+ salary: double\l+ taughtCourses: List\l|+ assignCourse()\l+ unassignCourse()\l}"];
+  Course [label="{Course|+ id, name, description\l+ credits: int\l+ instructor: String\l+ prerequisites: List\l|+ hasPrerequisites()\l+ canStudentEnroll()\l}"];
+  University [fillcolor="#e1f2e9", label="{University|+ name: String\l+ students: List\l+ professors: List\l+ courses: List\l|+ add/find/removeStudent()\l+ add/removeCourse()\l+ enrollStudentInCourse()\l+ recordGrade()\l+ generateStatistics()\l+ describePeople()\l}"];
+  DataProcessor [fillcolor="#fff1d9", label="{DataProcessor|«static»|+ filterEvenNumbers()\l+ countWords()\l+ sortStudentsByGPA()\l+ groupStudentsByYear()\l+ generateReport()\l}"];
+  Student -> Person [arrowhead=empty, label="наслідує"];
+  Professor -> Person [arrowhead=empty, label="наслідує"];
+  University -> Student [arrowhead=diamond, label="0..*"];
+  University -> Course [arrowhead=diamond, label="0..*"];
+  University -> Professor [arrowhead=diamond, label="0..*"];
+  Course -> Student [style=dashed, label="перевіряє"];
+  DataProcessor -> University [style=dashed, label="аналізує"];
+}
