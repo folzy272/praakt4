@@ -126,6 +126,14 @@ dart pub global run coverage:test_with_coverage
 powershell -ExecutionPolicy Bypass -File scripts/run_all.ps1
 ```
 
+Якщо використовуєте **Windows PowerShell 5.1**, скрипт `run_all.ps1` вже
+збережений у сумісному форматі UTF-8 із BOM; усі службові рядки скрипта —
+ASCII. Якщо PowerShell показує `ParserError` із некоректними кириличними
+символами, замініть старий файл версією з цього архіву. Попередження
+`1 package has newer versions incompatible with dependency constraints`
+саме по собі **не є помилкою** і не заважає запуску.
+
+
 ```bash
 # Linux/macOS
 bash scripts/run_all.sh
