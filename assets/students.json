@@ -1,0 +1,97 @@
+[
+  {
+    "id": "S001",
+    "firstName": "Олена",
+    "lastName": "Коваль",
+    "birthDate": "2004-06-12T00:00:00.000",
+    "enrollmentYear": 2023,
+    "enrolledCourses": [
+      "DART101",
+      "MATH101"
+    ],
+    "grades": {
+      "DART101": 95.0,
+      "MATH101": 88.0
+    },
+    "skills": [
+      "Dart",
+      "Flutter",
+      "Git"
+    ]
+  },
+  {
+    "id": "S002",
+    "firstName": "Андрій",
+    "lastName": "Мельник",
+    "birthDate": "2005-02-20T00:00:00.000",
+    "enrollmentYear": 2024,
+    "enrolledCourses": [
+      "DART101",
+      "MATH101"
+    ],
+    "grades": {
+      "DART101": 72.0,
+      "MATH101": 54.0
+    },
+    "skills": [
+      "Dart",
+      "Python"
+    ]
+  },
+  {
+    "id": "S003",
+    "firstName": "Марія",
+    "lastName": "Шевченко",
+    "birthDate": "2004-11-08T00:00:00.000",
+    "enrollmentYear": 2023,
+    "enrolledCourses": [
+      "DART101",
+      "MATH101",
+      "ADV201"
+    ],
+    "grades": {
+      "DART101": 91.0,
+      "MATH101": 93.0,
+      "ADV201": 97.0
+    },
+    "skills": [
+      "Dart",
+      "Flutter",
+      "SQL"
+    ]
+  },
+  {
+    "id": "S004",
+    "firstName": "Іван",
+    "lastName": "Петренко",
+    "birthDate": "2006-07-15T00:00:00.000",
+    "enrollmentYear": 2025,
+    "enrolledCourses": [
+      "DART101"
+    ],
+    "grades": {
+      "DART101": 63.0
+    },
+    "skills": [
+      "Dart",
+      "Git"
+    ]
+  },
+  {
+    "id": "S005",
+    "firstName": "Софія",
+    "lastName": "Бондар",
+    "birthDate": "2005-01-10T00:00:00.000",
+    "enrollmentYear": 2024,
+    "enrolledCourses": [
+      "MATH101"
+    ],
+    "grades": {
+      "MATH101": 89.0
+    },
+    "skills": [
+      "Python",
+      "SQL"
+    ]
+  }
+]

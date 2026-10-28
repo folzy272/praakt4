@@ -1,0 +1,6 @@
+id,firstName,lastName,birthDate,enrollmentYear,courses,grades,skills
+S001,Олена,Коваль,2004-06-12,2023,DART101|MATH101,DART101:95|MATH101:88,Dart|Flutter|Git
+S002,Андрій,Мельник,2005-02-20,2024,DART101|MATH101,DART101:72|MATH101:54,Dart|Python
+S003,Марія,Шевченко,2004-11-08,2023,DART101|MATH101|ADV201,DART101:91|MATH101:93|ADV201:97,Flutter|Dart|SQL
+S004,Іван,Петренко,2006-07-15,2025,DART101,DART101:63,Git|Dart
+S005,Софія,Бондар,2005-01-10,2024,MATH101,MATH101:89,Python|SQL
