@@ -1,4 +1,3 @@
-import '../models/student.dart';
 import '../models/university.dart';
 import 'text_analyzer.dart';
 

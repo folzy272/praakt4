@@ -1,4 +1,13 @@
 ﻿$ErrorActionPreference = 'Stop'
+# Use UTF-8 for native Dart output when piped through Windows PowerShell 5.1.
+# Without this, Ukrainian text can become mojibake in the terminal/logs.
+$utf8 = New-Object System.Text.UTF8Encoding($false)
+[Console]::InputEncoding = $utf8
+[Console]::OutputEncoding = $utf8
+$OutputEncoding = $utf8
+if ($env:OS -eq 'Windows_NT') {
+    & chcp.com 65001 | Out-Null
+}
 $projectRoot = Split-Path -Parent $PSScriptRoot
 Push-Location -LiteralPath $projectRoot
 try {

@@ -55,8 +55,10 @@ void demonstrateStrings() {
 
 void demonstrateBooleans() {
   print('\n[3] Логіка');
-  const passed = true;
-  const hasDebt = false;
+  final grade = int.parse('90');
+  final unpaidInvoices = <String>[];
+  final passed = grade >= 60;
+  final hasDebt = unpaidInvoices.isNotEmpty;
   print('passed && !hasDebt = ${passed && !hasDebt}');
   print('passed || hasDebt = ${passed || hasDebt}');
   print('90 >= 60 = ${90 >= 60}');
@@ -67,20 +69,24 @@ void demonstrateCollections() {
   print('\n[4] Колекції');
   final subjects = <String>['Dart', 'Математика'];
   subjects.add('Алгоритми');
-  final uniqueTags = <String>{'Dart', 'Git', 'Dart'};
+  final uniqueTags = <String>{'Dart', 'Git'};
+  final duplicateWasAdded = uniqueTags.add('Dart');
   final marks = <String, int>{'Dart': 95, 'Математика': 88};
   marks['Алгоритми'] = 91;
   print('List (${subjects.length}): $subjects');
   print('Set (${uniqueTags.length}): $uniqueTags');
+  print('Чи додався повторний елемент: $duplicateWasAdded');
   print('Map: $marks');
   print('Відсортовані предмети: ${subjects.toList()..sort()}');
 }
 
 String greeting({required String name}) => 'Вітаю, $name!';
 
+String? findNickname(String studentId) => studentId == 'S001' ? 'Лена' : null;
+
 void demonstrateNullSafety() {
   print('\n[5] Null safety');
-  String? nickname;
+  String? nickname = findNickname('UNKNOWN');
   print('Значення за замовчуванням: ${nickname ?? 'немає'}');
   print('Безпечний доступ: ${nickname?.length}');
   nickname = 'Лена';
