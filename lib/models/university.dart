@@ -66,9 +66,8 @@ class University {
   }
 
   bool removeCourse(String courseId) {
-    final removed = courses.removeWhere; // Зміни виконуються атомарно нижче.
     final before = courses.length;
-    removed((item) => item.id == courseId);
+    courses.removeWhere((item) => item.id == courseId);
     if (courses.length == before) return false;
     for (final student in students) {
       student.enrolledCourses.remove(courseId);

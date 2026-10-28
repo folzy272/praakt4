@@ -110,22 +110,22 @@
 <!-- University&#45;&gt;Student -->
 <g id="edge3" class="edge">
 <title>University&#45;&gt;Student</title>
-<path fill="none" stroke="#415d89" d="M58.75,-680.27C58.75,-680.27 58.75,-348.4 58.75,-348.4"/>
-<polygon fill="#415d89" stroke="#415d89" points="58.75,-348.4 55.55,-343.6 58.75,-338.8 61.95,-343.6 58.75,-348.4"/>
+<path fill="none" stroke="#415d89" d="M58.75,-670.67C58.75,-670.67 58.75,-338.8 58.75,-338.8"/>
+<polygon fill="#415d89" stroke="#415d89" points="58.75,-670.67 61.95,-675.47 58.75,-680.27 55.55,-675.47 58.75,-670.67"/>
 <text text-anchor="middle" x="9" y="-550" font-family="DejaVu Sans" font-size="10.00">0..*</text>
 </g>
 <!-- University&#45;&gt;Professor -->
 <g id="edge5" class="edge">
 <title>University&#45;&gt;Professor</title>
-<path fill="none" stroke="#415d89" d="M218.5,-680.5C218.5,-680.5 218.5,-476.34 218.5,-476.34"/>
-<polygon fill="#415d89" stroke="#415d89" points="218.5,-476.34 215.3,-471.54 218.5,-466.74 221.7,-471.54 218.5,-476.34"/>
+<path fill="none" stroke="#415d89" d="M218.5,-670.9C218.5,-670.9 218.5,-466.74 218.5,-466.74"/>
+<polygon fill="#415d89" stroke="#415d89" points="218.5,-670.9 221.7,-675.7 218.5,-680.5 215.3,-675.7 218.5,-670.9"/>
 <text text-anchor="middle" x="291" y="-641" font-family="DejaVu Sans" font-size="10.00">0..*</text>
 </g>
 <!-- University&#45;&gt;Course -->
 <g id="edge4" class="edge">
 <title>University&#45;&gt;Course</title>
-<path fill="none" stroke="#415d89" d="M138,-680.33C138,-680.33 138,-616.22 138,-616.22"/>
-<polygon fill="#415d89" stroke="#415d89" points="138,-616.22 134.8,-611.42 138,-606.62 141.2,-611.42 138,-616.22"/>
+<path fill="none" stroke="#415d89" d="M138,-670.73C138,-670.73 138,-606.62 138,-606.62"/>
+<polygon fill="#415d89" stroke="#415d89" points="138,-670.73 141.2,-675.53 138,-680.33 134.8,-675.53 138,-670.73"/>
 <text text-anchor="middle" x="147" y="-641" font-family="DejaVu Sans" font-size="10.00">0..*</text>
 </g>
 <!-- DataProcessor -->
