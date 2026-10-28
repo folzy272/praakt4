@@ -1,0 +1,6 @@
+studentId,fullName,enrollmentYear,gpa,courseCount,passedCount,skills
+S003,Марія Шевченко,2023,93.67,3,3,Dart|Flutter|SQL
+S001,Олена Коваль,2023,91.50,2,2,Dart|Flutter|Git
+S005,Софія Бондар,2024,89.00,1,1,Python|SQL
+S002,Андрій Мельник,2024,63.00,2,1,Dart|Python
+S004,Іван Петренко,2025,63.00,1,1,Dart|Git

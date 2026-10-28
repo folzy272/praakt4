@@ -1,0 +1,106 @@
+{
+  "note": "ПРИКЛАД, незалежно обчислений за assets/students.csv (не є логом виконання Dart).",
+  "source": "assets/students.csv",
+  "statistics": {
+    "university": "Демо-університет",
+    "studentCount": 5,
+    "professorCount": 0,
+    "courseCount": 3,
+    "averageGpa": 80.03333333333333,
+    "enrollmentsByCourse": {
+      "DART101": 4,
+      "MATH101": 4,
+      "ADV201": 1
+    },
+    "passedByCourse": {
+      "DART101": 4,
+      "MATH101": 3,
+      "ADV201": 1
+    },
+    "roles": {
+      "Student": 5,
+      "Professor": 0
+    }
+  },
+  "averagesByCourse": {
+    "DART101": 80.25,
+    "MATH101": 81.0,
+    "ADV201": 97.0
+  },
+  "studentsByEnrollmentYear": {
+    "2023": 2,
+    "2024": 2,
+    "2025": 1
+  },
+  "uniqueSkills": [
+    "Dart",
+    "Flutter",
+    "Git",
+    "Python",
+    "SQL"
+  ],
+  "studentReport": [
+    {
+      "studentId": "S003",
+      "fullName": "Марія Шевченко",
+      "enrollmentYear": 2023,
+      "gpa": 93.66666666666667,
+      "courseCount": 3,
+      "passedCount": 3,
+      "skills": [
+        "Dart",
+        "Flutter",
+        "SQL"
+      ]
+    },
+    {
+      "studentId": "S001",
+      "fullName": "Олена Коваль",
+      "enrollmentYear": 2023,
+      "gpa": 91.5,
+      "courseCount": 2,
+      "passedCount": 2,
+      "skills": [
+        "Dart",
+        "Flutter",
+        "Git"
+      ]
+    },
+    {
+      "studentId": "S005",
+      "fullName": "Софія Бондар",
+      "enrollmentYear": 2024,
+      "gpa": 89.0,
+      "courseCount": 1,
+      "passedCount": 1,
+      "skills": [
+        "Python",
+        "SQL"
+      ]
+    },
+    {
+      "studentId": "S002",
+      "fullName": "Андрій Мельник",
+      "enrollmentYear": 2024,
+      "gpa": 63.0,
+      "courseCount": 2,
+      "passedCount": 1,
+      "skills": [
+        "Dart",
+        "Python"
+      ]
+    },
+    {
+      "studentId": "S004",
+      "fullName": "Іван Петренко",
+      "enrollmentYear": 2025,
+      "gpa": 63.0,
+      "courseCount": 1,
+      "passedCount": 1,
+      "skills": [
+        "Dart",
+        "Git"
+      ]
+    }
+  ]
+}
